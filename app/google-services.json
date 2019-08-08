@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "972105065700",
+    "firebase_url": "https://fcmformap.firebaseio.com",
+    "project_id": "fcmformap",
+    "storage_bucket": "fcmformap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972105065700:android:c3edc59b8d1b9de4",
+        "android_client_info": {
+          "package_name": "com.example.nhavo.map4d123"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972105065700-m73ulqu17fqmgu92dcan65800d603isv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPsajbEDv-_U5EsFfk9S9BQwjfzOtxhjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972105065700-m73ulqu17fqmgu92dcan65800d603isv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

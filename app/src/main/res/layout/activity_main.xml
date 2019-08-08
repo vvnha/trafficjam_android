@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <vn.map4d.map4dsdk.maps.MFMapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/map3D"
+        class="vn.map4d.map4dsdk.maps.MFSupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/currentMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:textColor="#575757"
+        android:text="@string/currentSwitchMode3D"
+        />
+
+    <TextView
+        android:id="@+id/modeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/currentMode"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:textColor="#575757"
+        android:text="@string/mode3dTo2d"
+        />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currentMode"
+        android:layout_below="@+id/currentMode"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#575757"
+        android:text="@string/lat"
+        />
+
+    <TextView
+        android:id="@+id/lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lat"
+        android:layout_below="@+id/lat"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#575757"
+        android:text="@string/lng"
+        />
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/currentMode"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="117dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/time"
+        android:textColor="#575757"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/btnSetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_alignTop="@+id/lat"
+        android:layout_alignRight="@+id/time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="85dp"
+        android:padding="5dp"
+        android:text="@string/setTime"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnEnable3D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="83dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/switchMode"
+        android:textAllCaps="false"
+        android:textColor="#0055ff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSwitchMode3D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEnable3D"
+        android:layout_alignLeft="@+id/btnEnable3D"
+        android:layout_alignRight="@+id/btnEnable3D"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/mode3dTo2d"
+        android:textAllCaps="false"
+        android:textColor="#0055ff"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btnEnableLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="@string/enableLocation"
+        android:textSize="16sp"
+        android:textColor="#0055ff"
+        android:textAllCaps="false"
+        android:background="#0000ffff" />
+
+
+
+    <ImageButton
+        android:id="@+id/btnNofi"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:src="@android:drawable/ic_notification_overlay" />
+
+</RelativeLayout>
